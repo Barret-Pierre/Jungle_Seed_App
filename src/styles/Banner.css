@@ -3,6 +3,13 @@
     padding: 32px;
     border-bottom: solid 3px black;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.js-banner-row {
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
@@ -15,3 +22,13 @@
 .js-title {
     font-size: 32px;
 }
+
+@media screen and (max-width: 767px) {
+    .js-banner {
+        flex-direction: column-reverse;
+    }
+    .js-title {
+        font-size: 24px;
+    }
+}
+
