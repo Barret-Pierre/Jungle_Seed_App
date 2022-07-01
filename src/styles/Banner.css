@@ -1,0 +1,17 @@
+.js-banner {
+    color: black;
+    padding: 32px;
+    border-bottom: solid 3px black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.js-logo {
+    width: 45px;
+}
+
+.js-title {
+    font-size: 32px;
+}

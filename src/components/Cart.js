@@ -1,3 +1,5 @@
+import "../styles/Cart.css"
+
 function Cart() {
     let cart = [
         {
@@ -23,7 +25,7 @@ function Cart() {
     };
 
     return (
-        <div>
+        <div className="js-cart">
             <ul>
                 <li> Le {cart[0].name} coûte : {cart[0].value} € </li>
                 <li> Le {cart[1].name} coûte : {cart[1].value} € </li>
