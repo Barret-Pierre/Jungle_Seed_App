@@ -1,0 +1,24 @@
+.js-plant-item {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.js-sales {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    font-weight: 500;
+    color: white;
+    padding: 5px 10px;
+    background-color: #31b572;
+}
+
+.js-plant-item-cover {
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+}
