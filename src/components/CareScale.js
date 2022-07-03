@@ -1,13 +1,20 @@
 import PropTypes from 'prop-types'
+import "../styles/CareScale.css"
+import sun from "../assets/soleil.png"
+import water from "../assets/eau.png"
 
-function CareScale({careType, scaleValue}) {
+function CareScale({ careType, scaleValue, id }) {
     const range = [1, 2, 3]
-    const scaleType = careType === 'light' ? '🌞' : '💧'
+    const scaleType = careType === 'light' ? (
+        <img src={sun} alt="Icone de soleil" />
+    ) : (
+        <img src={water} alt="Icone de eau" />
+    )
 
     return (
         <div>
-            {range.map((rangeElement) => 
-                scaleValue >= rangeElement && <span>{scaleType}</span>
+            {range.map((rangeElement, index) =>
+                scaleValue >= rangeElement && <span key={`${id}-${index}`} className='js-item-carscale'>{scaleType}</span>
             )}
         </div>
     )

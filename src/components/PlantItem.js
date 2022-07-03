@@ -1,15 +1,20 @@
 import PropTypes from 'prop-types'
 import CareScale from "./CareScale"
+import defaultCover from "../assets/monstera.jpg"
+import "../styles/PlantItem.css"
 
+function handleClick() {
+    console.log("Clique réussi")
+}
 
 function PlantItem({ name, cover, id, light, water, isSpecialOffer }) {
     return (
-        <li key={id} className="js-plant-item">
+        <li className="js-plant-item" onClick={handleClick}>
             <img src={cover} alt={`Un(e) ${name}`} className="js-plant-item-cover" />
             {name}
             <div>
-                <CareScale careType="light" scaleValue={light} />
-                <CareScale careType="water" scaleValue={water} />
+                <CareScale id={`${id}-light`} careType="light" scaleValue={light} />
+                <CareScale id={`${id}-light`} careType="water" scaleValue={water} />
             </div>
             {isSpecialOffer && <div className="js-sales">Soldé !</div>}
         </li>
@@ -28,7 +33,7 @@ PlantItem.propTypes = {
 };
 PlantItem.defaultProps = {
     name: 'plante',
-    cover: "../assets/monstera.jpg"
+    cover: defaultCover
 }
 
 export default PlantItem
