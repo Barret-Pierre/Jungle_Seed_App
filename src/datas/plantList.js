@@ -1,4 +1,13 @@
-import defaultCover from "../assets/monstera.jpg"
+// import defaultCover from "../assets/monstera.jpg"
+import monstera from "../assets/monstera.jpg"
+import lyrata from "../assets/lyrata.jpg"
+import pothos from "../assets/pothos.jpg"
+import cactus from "../assets/cactus.jpg"
+import olivier from "../assets/olivier.jpg"
+import mint from "../assets/mint.jpg"
+import basil from "../assets/basil.jpg"
+import succulente from "../assets/succulent.jpg"
+import calathea from "../assets/calathea.jpg"
 
 export const plantList = [
 	{
@@ -9,6 +18,7 @@ export const plantList = [
 		water: 2,
 		light: 2,
 		price: 8,
+		cover: monstera,
 	},
 	{
 		name: 'ficus lyrata',
@@ -18,6 +28,7 @@ export const plantList = [
 		water: 1,
 		light: 2,
 		price: 16,
+		cover: lyrata,
 	},
 	{
 		name: 'pothos argenté',
@@ -27,17 +38,17 @@ export const plantList = [
 		water: 2,
 		light: 1,
 		price: 14,
-		cover: defaultCover
+		cover: pothos
 	},
 	{
-		name: 'yucca',
-		category: 'classique',
+		name: 'cactus',
+		category: 'cactus',
 		id: '4kk',
 		isSpecialOffer: false,
 		water: 1,
 		light: 3,
 		price: 9,
-		cover: defaultCover
+		cover: cactus
 	},
 	{
 		name: 'olivier',
@@ -47,17 +58,17 @@ export const plantList = [
 		water: 2,
 		light: 3,
 		price: 25,
-		cover: defaultCover
+		cover: olivier
 	},
 	{
-		name: 'géranium',
+		name: 'menthe',
 		category: 'extérieur',
 		id: '6uo',
 		isSpecialOffer: false,
 		water: 2,
 		light: 3,
 		price: 13,
-		cover: defaultCover
+		cover: mint
 	},
 	{
 		name: 'basilique',
@@ -67,17 +78,17 @@ export const plantList = [
 		water: 2,
 		light: 3,
 		price: 7,
-		cover: defaultCover
+		cover: basil
 	},
 	{
-		name: 'aloe',
+		name: 'calathea',
 		category: 'plante grasse',
 		id: '8fp',
 		isSpecialOffer: false,
 		water: 1,
 		light: 2,
 		price: 11,
-		cover: defaultCover
+		cover: calathea
 	},
 	{
 		name: 'succulente',
@@ -87,6 +98,6 @@ export const plantList = [
 		water: 3,
 		light: 3,
 		price: 12,
-		cover: defaultCover
+		cover: succulente
 	}
 ]
