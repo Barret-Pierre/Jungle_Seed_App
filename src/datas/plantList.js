@@ -8,6 +8,7 @@ export const plantList = [
 		isSpecialOffer: true,
 		water: 2,
 		light: 2,
+		price: 8,
 	},
 	{
 		name: 'ficus lyrata',
@@ -16,6 +17,7 @@ export const plantList = [
 		isSpecialOffer: false,
 		water: 1,
 		light: 2,
+		price: 16,
 	},
 	{
 		name: 'pothos argenté',
@@ -24,6 +26,7 @@ export const plantList = [
 		isSpecialOffer: false,
 		water: 2,
 		light: 1,
+		price: 14,
 		cover: defaultCover
 	},
 	{
@@ -33,6 +36,7 @@ export const plantList = [
 		isSpecialOffer: false,
 		water: 1,
 		light: 3,
+		price: 9,
 		cover: defaultCover
 	},
 	{
@@ -42,6 +46,7 @@ export const plantList = [
 		isSpecialOffer: false,
 		water: 2,
 		light: 3,
+		price: 25,
 		cover: defaultCover
 	},
 	{
@@ -51,6 +56,7 @@ export const plantList = [
 		isSpecialOffer: false,
 		water: 2,
 		light: 3,
+		price: 13,
 		cover: defaultCover
 	},
 	{
@@ -60,6 +66,7 @@ export const plantList = [
 		isSpecialOffer: true,
 		water: 2,
 		light: 3,
+		price: 7,
 		cover: defaultCover
 	},
 	{
@@ -69,6 +76,7 @@ export const plantList = [
 		isSpecialOffer: false,
 		water: 1,
 		light: 2,
+		price: 11,
 		cover: defaultCover
 	},
 	{
@@ -78,6 +86,7 @@ export const plantList = [
 		isSpecialOffer: false,
 		water: 3,
 		light: 3,
+		price: 12,
 		cover: defaultCover
 	}
 ]

@@ -3,17 +3,17 @@ import CareScale from "./CareScale"
 import defaultCover from "../assets/monstera.jpg"
 import "../styles/PlantItem.css"
 
-function handleClick() {
-    console.log("Clique réussi")
+function handleClick(plantName) {
+    console.log(`Vous voulez acheter 1 ${plantName} ?`)
 }
 
 function PlantItem({ name, cover, id, light, water, isSpecialOffer }) {
     return (
-        <li className="js-plant-item" onClick={handleClick}>
+        <li className="js-plant-item" onClick={() => handleClick(name)}>
             <img src={cover} alt={`Un(e) ${name}`} className="js-plant-item-cover" />
             {name}
             <div>
-                <CareScale id={`${id}-light`} careType="light" scaleValue={light} />
+                <CareScale id={`${id}-light`} careType="light" scaleValue={light}/>
                 <CareScale id={`${id}-light`} careType="water" scaleValue={water} />
             </div>
             {isSpecialOffer && <div className="js-sales">Soldé !</div>}

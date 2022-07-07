@@ -1,0 +1,45 @@
+.js-footer {
+    color: black;
+    padding: 32px;
+    border-top: solid 3px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+}
+
+.js-footer-element {
+    margin-bottom: 10px;
+}
+
+.js-footer form {
+    display: flex;
+    gap: 10px;
+}
+
+.js-footer form input {
+    border: solid 1px #858585;
+    width: 270px;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.js-footer form input:focus {
+    border: solid 3px #31b572;
+    outline-color: transparent;
+}
+
+.js-footer form button {
+    color: #31b572;
+    border: solid 2px #31b572;
+    background-color: white;
+    border-radius: 7px;
+    padding: 0.5rem;
+    width: 120px;
+}
+
+.js-footer form button:hover {
+    color: white;
+    border: solid 2px #31b572;
+    background-color: #31b572;
+}
