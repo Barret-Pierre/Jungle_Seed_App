@@ -1,4 +1,46 @@
 .js-description {
+    width: auto;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/descritpion_background1.jpg");
+    background-size: cover;
+    background-position: center;
     font-size: 18px;
     padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.js-description-text {
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+}
+
+.js-description-button {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    background-color: transparent;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 220px;
+    height: fit-content
+}
+.js-description-button:hover{
+    transform: translateY(5px) ;
+    text-decoration: none;
+    text-align: center;
+    color: #31b572;
+    border: solid 2px #31b572;
+    background-color: transparent;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 220px;
+    height: fit-content
+}
+

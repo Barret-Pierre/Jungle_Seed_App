@@ -28,12 +28,8 @@ function printInfos(careType, scaleValue) {
     }
 }
 
-function returnInfos(e, careType, scaleValue) {
-    e.preventDefault();
-    e.stopPropagation();
-    alert(
-        printInfos(careType, scaleValue)+
-        `\nCe composant est de type ${careType}`)
+function returnInfos(careType, scaleValue) {
+    return printInfos(careType, scaleValue)
 }
 
 function CareScale({ careType, scaleValue, id }) {
@@ -45,9 +41,9 @@ function CareScale({ careType, scaleValue, id }) {
     )
 
     return (
-        <div onClick={(e) => returnInfos(e, careType, scaleValue)}>
+        <div className='js-item-carescale' title={returnInfos(careType, scaleValue)}>
             {range.map((rangeElement, index) =>
-                scaleValue >= rangeElement && <span key={`${id}-${index}`} className='js-item-carscale'>{scaleType}</span>
+                scaleValue >= rangeElement && <span key={`${id}-${index}`} className='js-item-carscale-logo'>{scaleType}</span>
             )}
         </div>
     )

@@ -1,10 +1,12 @@
 import "../styles/Description.css"
 
 function Description() {
-    const text = "Achetez les plantes de vos rêves et chouchoutez les !";
     const emoji = "🎍🌴🌲";
     return (
-    <p className="js-description">{text + emoji}</p>
+        <div className="js-description">
+            <p className="js-description-text">Achetez les plantes de vos rêves <br/> et chouchoutez les !{emoji}</p>
+            <a href="#js-shopping-section" className="js-description-button">Catalogue</a>
+        </div>
     );
 }
 

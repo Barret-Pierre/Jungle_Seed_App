@@ -40,7 +40,7 @@ function ShoppingList({ cart, updateCart }) {
     }
 
     return (
-        <div className="js-shopping-list">
+        <div id="js-shopping-section" className="js-shopping-list">
 
             <Categories cats={cats} updateCat={updateCat} cat={cat} capitalizeFirstLetter={capitalizeFirstLetter}/>
 

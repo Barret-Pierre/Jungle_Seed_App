@@ -1,5 +1,9 @@
-.js-item-carscale img{
-  width: 20px;
-  height: 20px;
+.js-item-carescale{
+  cursor: pointer;
+}
+
+.js-item-carscale-logo img{
+  width: 25px;
+  height: 25px;
 }
 
