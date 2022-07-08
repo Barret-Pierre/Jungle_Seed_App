@@ -7,14 +7,18 @@ function handleClick(plantName) {
     console.log(`Vous voulez acheter 1 ${plantName} ?`)
 }
 
-function PlantItem({ name, cover, id, light, water, isSpecialOffer }) {
+
+function PlantItem({ name, cover, id, price, light, water, isSpecialOffer, capitalizeFirstLetter }) {
     return (
         <li className="js-plant-item" onClick={() => handleClick(name)}>
             <img src={cover} alt={`Un(e) ${name}`} className="js-plant-item-cover" />
-            {name}
-            <div>
-                <CareScale id={`${id}-light`} careType="light" scaleValue={light}/>
-                <CareScale id={`${id}-light`} careType="water" scaleValue={water} />
+            <h3>{capitalizeFirstLetter(name)}</h3>
+            <div className='js-plant-item-scales'>
+                <div>
+                    <CareScale id={`${id}-light`} careType="light" scaleValue={light} />
+                    <CareScale id={`${id}-light`} careType="water" scaleValue={water} />
+                </div>
+                <div className='js-plant-item-scales-price'>{price}€</div>
             </div>
             {isSpecialOffer && <div className="js-sales">Soldé !</div>}
         </li>

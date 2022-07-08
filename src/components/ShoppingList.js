@@ -15,6 +15,10 @@ function ShoppingList({ cart, updateCart }) {
 
     const [cat, updateCat] = useState([...cats])
 
+    function capitalizeFirstLetter(string) {
+        return string[0].toUpperCase() + string.slice(1);
+    }
+
     function addToCart(name, price, id) {
         const plantExiste = cart.find((plant) => plant.id === id)
         if (plantExiste !== undefined) {
@@ -38,22 +42,26 @@ function ShoppingList({ cart, updateCart }) {
     return (
         <div className="js-shopping-list">
 
-            <Categories cats={cats} updateCat={updateCat} cat={cat}/>
+            <Categories cats={cats} updateCat={updateCat} cat={cat} capitalizeFirstLetter={capitalizeFirstLetter}/>
 
             <ul className="js-plant-list">
                 {plantList.map((plant) =>
                 (
                     cat.includes(plant.category) && (
-                        <div key={plant.id}>
+                        <div key={plant.id} className="js-plant-list-item">
                             <PlantItem
                                 name={plant.name}
                                 cover={plant.cover}
                                 id={plant.id}
+                                price={plant.price}
                                 light={plant.light}
                                 water={plant.water}
                                 isSpecialOffer={plant.isSpecialOffer}
+                                capitalizeFirstLetter={capitalizeFirstLetter}
                             />
-                            <button onClick={() => addToCart(plant.name, plant.price, plant.id)}>Ajouter</button>
+                            <button onClick={() => addToCart(plant.name, plant.price, plant.id)}>
+                                Acheter
+                            </button>
                         </div>
                     )
                 ))}

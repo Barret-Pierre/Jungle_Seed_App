@@ -1,8 +1,25 @@
 .js-categories {
-	text-align: center;
-	padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
 }
 
 .js-categories-select {
-	margin-right: 15px;
+    color: #31b572;
+    border: solid 2px #31b572;
+    background-color: white;
+    border-radius: 7px;
+    padding: 0.5rem;
+    width: 150px;
+    height: fit-content;
+}
+
+.js-categories-select:focus {
+    border: solid 3px #31b572;
+    outline-color: transparent;
+}
+
+.js-categories-select option {
+    color: black;
 }

@@ -11,3 +11,31 @@
 .js-shopping-list {
     width: 100%;
 }
+
+.js-plant-list-item {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.js-plant-list-item button {
+    color: #31b572;
+    border: solid 2px #31b572;
+    background-color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 220px;
+    height: fit-content;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.js-plant-list-item button:hover{
+    color: white;
+    border: solid 2px #31b572;
+    background-color: #31b572;
+}
